@@ -3,9 +3,9 @@ package com.hj212.format.hbt212.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.hj212.format.hbt212.model.verify.groups.VersionGroup;
 
-import io.swagger.annotations.ApiModelProperty;
+// import io.swagger.annotations.ApiModelProperty;
 
-import javax.json.bind.annotation.JsonbProperty;
+// import javax.json.bind.annotation.JsonbProperty;
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.Max;
 import java.math.BigDecimal;
@@ -16,18 +16,18 @@ import java.math.BigDecimal;
  */
 public class Device {
 
-    @ApiModelProperty(value = "污染治理设施运行状态的实时采样值", name = "RS")
+    // @ApiModelProperty(value = "污染治理设施运行状态的实时采样值", name = "RS")
     @Max(value = 5, groups = VersionGroup.V2017.class)
 //    @N(integer = 1, groups = VersionGroup.V2017.class)
     @JsonProperty("RS")
-    @JsonbProperty("RS")
+    // @JsonbProperty("RS")
     private int rs;
 
-    @ApiModelProperty(value = "污染治理设施一日内的运行时间", name = "RT")
+    // @ApiModelProperty(value = "污染治理设施一日内的运行时间", name = "RT")
     @DecimalMax(value = "24", groups = VersionGroup.V2017.class)
 //    @N(integer = 2, fraction = 2, groups = VersionGroup.V2017.class)
     @JsonProperty("RT")
-    @JsonbProperty("RT")
+    // @JsonbProperty("RT")
     private BigDecimal rt;
 
     public int getRs() {

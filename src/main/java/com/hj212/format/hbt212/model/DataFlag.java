@@ -1,7 +1,7 @@
 package com.hj212.format.hbt212.model;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+// import io.swagger.annotations.ApiModel;
+// import io.swagger.annotations.ApiModelProperty;
 
 import java.util.Collection;
 
@@ -9,23 +9,23 @@ import java.util.Collection;
  * 数据段 标志
  * Created by xiaoyao9184 on 2017/12/15.
  */
-@ApiModel
+// @ApiModel
 public enum DataFlag {
-    @ApiModelProperty(value = "命令是否应答")
+    // @ApiModelProperty(value = "命令是否应答")
     A(1),
-    @ApiModelProperty(value = "是否有数据包序号")
+    // @ApiModelProperty(value = "是否有数据包序号")
     D(2),
-    @ApiModelProperty(value = "标准版本号V0（HJ 212-2017）")
+    // @ApiModelProperty(value = "标准版本号V0（HJ 212-2017）")
     V0,
-    @ApiModelProperty(value = "标准版本号V1")
+    // @ApiModelProperty(value = "标准版本号V1")
     V1,
-    @ApiModelProperty(value = "标准版本号V2")
+    // @ApiModelProperty(value = "标准版本号V2")
     V2,
-    @ApiModelProperty(value = "标准版本号V3")
+    // @ApiModelProperty(value = "标准版本号V3")
     V3,
-    @ApiModelProperty(value = "标准版本号V4")
+    // @ApiModelProperty(value = "标准版本号V4")
     V4,
-    @ApiModelProperty(value = "标准版本号V5")
+    // @ApiModelProperty(value = "标准版本号V5")
     V5;
 
     private int bit;

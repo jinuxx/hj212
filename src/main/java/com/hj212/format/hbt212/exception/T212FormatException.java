@@ -50,7 +50,7 @@ public class T212FormatException extends Exception {
     }
 
     public static void crc_verification_failed(Enum<?> flag, char[] msg, int crc) throws T212FormatException {
-        throw new T212FormatException("Crc Verification failed: " + new String(msg) + ": " + Integer.toHexString(crc));
+        throw new T212FormatException("Crc Verification failed: " + new String(msg) + ": " + Integer.toHexString(crc).toUpperCase());
     }
 
     public static void segment_exception(SegmentFormatException e) throws T212FormatException {

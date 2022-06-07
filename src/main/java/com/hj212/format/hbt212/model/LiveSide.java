@@ -4,9 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.hj212.format.hbt212.core.validator.field.C;
 import com.hj212.format.hbt212.model.verify.groups.VersionGroup;
 
-import io.swagger.annotations.ApiModelProperty;
+// import io.swagger.annotations.ApiModelProperty;
 
-import javax.json.bind.annotation.JsonbProperty;
+// import javax.json.bind.annotation.JsonbProperty;
 
 /**
  * 现场端
@@ -14,15 +14,15 @@ import javax.json.bind.annotation.JsonbProperty;
  */
 public class LiveSide {
 
-    @ApiModelProperty(value = "现场端信息", name = "Info")
+    // @ApiModelProperty(value = "现场端信息", name = "Info")
     @JsonProperty("Info")
-    @JsonbProperty("Info")
+    // @JsonbProperty("Info")
     private String info;
 
-    @ApiModelProperty(value = "在线监控（监测）仪器仪表编码", name = "SN")
+    // @ApiModelProperty(value = "在线监控（监测）仪器仪表编码", name = "SN")
     @C(len = 24, groups = VersionGroup.V2017.class)
     @JsonProperty("SN")
-    @JsonbProperty("SN")
+    // @JsonbProperty("SN")
     private String sn;
 
     public String getInfo() {

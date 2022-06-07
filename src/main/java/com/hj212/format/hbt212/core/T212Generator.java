@@ -67,7 +67,7 @@ public class T212Generator
      * @throws IOException
      */
     public int writeHexInt32(int i) throws IOException {
-        char[] intChars = String.format("%04X", i & 0xFFFF).toCharArray();
+        char[] intChars = String.format("%04X", i & 0xFFFF).toUpperCase().toCharArray();
         writer.write(intChars);
         return intChars.length;
     }
